@@ -1,3 +1,44 @@
-body{
-    background-color: #ddd;
+.my-gallery{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+    ul{
+        display: flex;
+        margin-bottom: 10px;
+        li{
+            list-style: none;
+            background: #eee;
+            padding: 8px 20px;
+            margin: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &.active{
+                background: #fc2465;
+                color: #fff;
+            }
+        }
+    }
+    .product{
+        display: flex;
+        flex-wrap: wrap;
+        .itembox{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.hood{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
